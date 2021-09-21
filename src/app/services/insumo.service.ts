@@ -15,6 +15,7 @@ export class InsumoService {
   }
 
   post(insumo: Insumo): Observable<any>{
+    debugger
     let contratos = this.contratoService.get();
     let insumos : Insumo[]=[];
     let enc=false;
@@ -23,7 +24,7 @@ export class InsumoService {
       insumos=this.get();
     }
     contratos.forEach((c)=>{
-      if(c.codigoContrato=insumo.codigoContrato){
+      if(c.codigoContrato==insumo.codigoContrato){
         enc=true;
         contratoEncontrado=c;
       }

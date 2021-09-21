@@ -1,0 +1,41 @@
+<label for="exampleInputPassword1" class="form-label">Contratos</label>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Codigo Contrato</th>
+        <th scope="col">Suministro</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of contratos; index as i ">
+            <td>{{ c.codigoContrato }}</td>
+            <td>{{ c.tipoSuministro }}</td>
+            <td>{{c.valorContrato }}</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <br>
+
+  <label for="exampleInputPassword1" class="form-label">Insumos</label>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Codigo Contrato</th>
+        <th scope="col">descripcion</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let insu of insumos; index as i ">
+            <td>{{ insu.codigoContrato }}</td>
+            <td>{{ insu.descripcion }}</td>
+            <td>{{insu.valorProducto }}</td>
+        </tr>
+
+    </tbody>
+  </table>

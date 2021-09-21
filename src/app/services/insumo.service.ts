@@ -44,7 +44,7 @@ export class InsumoService {
         });
         localStorage.setItem('contratos', JSON.stringify(contratos));
         insumos.push(insumo);
-        localStorage.setItem('insumos', JSON.stringify(contratos));
+        localStorage.setItem('insumos', JSON.stringify(insumos));
         alert('Producto registrado correctamente');
         return of (insumo);
       }

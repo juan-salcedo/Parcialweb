@@ -7,13 +7,15 @@ import { NavComponent } from './nav/nav.component';
 import { RegistroContratoComponent } from './registro-contrato/registro-contrato.component';
 import { RegistroInsumoComponent } from './registro-insumo/registro-insumo.component';
 import { FormsModule } from '@angular/forms';
+import { ConsultarDatosComponent } from './consultar-datos/consultar-datos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     RegistroContratoComponent,
-    RegistroInsumoComponent
+    RegistroInsumoComponent,
+    ConsultarDatosComponent
   ],
   imports: [
     BrowserModule,

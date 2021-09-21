@@ -1,0 +1,19 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Código Contrato</label>
+      <input type="text" class="form-control" name="codigoInput" [(ngModel)]="contrato.codigoContrato" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Tipo Suministro</label>
+        <select class="form-select" [(ngModel)]="contrato.tipoSuministro"  name="tipoSelect" aria-label="Default select example">
+            <option value="equipos">Equipos</option>
+            <option value="paseo">Producto Aseo</option>
+            <option value="papeleria">Papelería</option>
+          </select>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Valor contrato</label>
+      <input type="number" class="form-control" [(ngModel)]="contrato.valorContrato" name="valorInput">
+    </div>
+    <button type="submit" (click)="add()" class="btn btn-primary">Guardar</button>
+  </form>
